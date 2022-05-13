@@ -1,14 +1,12 @@
 <main class="contenedor seccion contenido-centrado">
-        <h1>Iniciar Sesión</h1>
+        <h1 data-cy="heading-login">Iniciar Sesión</h1>
 
        <?php foreach($errores as $error): ?>
-         <div class="alerta error">
-             <?php echo $error; ?>
-         </div>
+         <div data-cy="alerta-login" class="alerta error"><?php echo $error; ?></div>
         <?php endforeach; ?>
 
 
-        <form class="formulario formulario-login" method="POST" action="/bienesraicesMVC/public/index.php/login" >
+        <form data-cy="formulario-login" class="formulario formulario-login" method="POST" action="/bienesraicesMVC/public/index.php/login" >
 
             <fieldset class="fieldset-login">
                 <legend>Email y Contrseña</legend>

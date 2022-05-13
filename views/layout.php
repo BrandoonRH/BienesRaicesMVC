@@ -35,7 +35,7 @@
 
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/bienesraicesMVC/public/build/img/dark-mode.svg">
-                    <nav class="navegacion">
+                    <nav data-cy="navegacion-header" class="navegacion">
                         <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
                         <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
                         <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
@@ -51,7 +51,7 @@
                 
             </div> <!--.barra-->
 
-           <?php echo $inicio ? "<h1><h1>Venta de Casas en Guadalajara Jal.</h1>" : ""; ?>
+           <?php echo $inicio ? "<h1 data-cy='heading-sitio' >Venta de Casas en Guadalajara Jal.</h1>" : ""; ?>
         </div>
     </header>
 
@@ -60,7 +60,7 @@
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+            <nav data-cy="navegacion-footer" class="navegacion">
                 <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
                 <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
                 <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
@@ -69,7 +69,7 @@
         </div>
         
 
-        <p class="copyright">Todos los derechos Reservados <?php echo date('Y')?> &copy;</p>
+        <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y')?> &copy;</p>
     </footer>
 
     <script src="/bienesraicesMVC/public/build/js/bundle.min.js"></script>

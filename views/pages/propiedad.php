@@ -3,7 +3,7 @@
 <div class="contenedor" style="margin-bottom: 15px">
      <a href="/bienesraicesMVC/public/index.php/propiedades" class="boton boton-verde">Volver..</a>
 </div>
-        <h1><?php echo $propiedad->titulo ?></h1>
+        <h1 data-cy="titulo-propiedad"><?php echo $propiedad->titulo ?></h1>
 
         <img loading="lazy" src="/imagenesBienesRaices/<?php echo $propiedad->imagen; ?>" alt="imagen de la propiedad">
      

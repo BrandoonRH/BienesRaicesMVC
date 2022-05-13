@@ -1,0 +1,6 @@
+{
+
+    "baseUrl" : "http://localhost/bienesraicesMVC/public/index.php",
+    "viewportWidth": 1100,
+    "viewportHeight": 900
+}
