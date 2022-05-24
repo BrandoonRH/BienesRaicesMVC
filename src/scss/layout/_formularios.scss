@@ -48,3 +48,47 @@
         width: 10rem;
     }
 }
+
+.formularioBusqueda{
+    
+    fieldset{
+        padding: 3rem !important;
+    }
+    p {
+        font-size: 1.4rem;
+        color: $grisOscuro;
+        margin: 2rem 0 0 0;
+    }
+
+    legend {
+        font-size: 2rem;
+        color: $grisOscuro;
+       
+    }
+
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+        color: $blanco;
+        
+    }
+    input:not([type="submit"]), 
+    textarea,
+    select {
+        padding: 1rem;
+        color: $blanco;
+        display: inline;
+        width: 50%;
+        background-color: $grisOscuro;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+  
+
+    
+  
+   
+}

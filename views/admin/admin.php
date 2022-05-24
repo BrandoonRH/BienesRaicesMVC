@@ -16,7 +16,7 @@
 
         <a href="/bienesraicesMVC/public/index.php/admin/propiedades/ver" class="boton boton-verde">Ver Propiedades</a>
 
-        <a href="#" class="boton boton-verde">Actualizar Propiedad</a>
+        <a href="/bienesraicesMVC/public/index.php/admin/propiedades/actualizarVista" class="boton boton-verde">Actualizar Propiedad</a>
         
         <a href="#" class="boton boton-verde">Eliminar Propiedad</a>
     </div>

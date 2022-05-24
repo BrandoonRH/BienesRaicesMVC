@@ -14,7 +14,6 @@ class PaginasController{
        $router->render('pages/index', [
            'propiedades' => $propiedades,
            'inicio' => $inicio
-
        ]);
     }
 
@@ -76,7 +75,6 @@ class PaginasController{
          $mail->Port = 2525; 
 
          //Configurar el contenido del email
-
          $mail->setFrom('admin@bienesraices.com');
          $mail->addAddress('admin@bienesraices.com', 'BienesRaices.com');
          $mail->Subject = 'Tienes un Nuevo Mensaje'; 

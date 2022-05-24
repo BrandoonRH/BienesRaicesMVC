@@ -27,6 +27,8 @@ $router->get('/admin/propiedades/actualizar', [PropiedadController::class, 'actu
 $router->post('/admin/propiedades/actualizar', [PropiedadController::class, 'actualizar']);
 $router->post('/admin/propiedades/eliminar', [PropiedadController::class, 'eliminar']);
 
+$router->get('/admin/propiedades/actualizarVista', [PropiedadController::class, 'actualizarView']);
+
 //Rutas CRUD Vendedores 
 $router->get('/admin/vendedores/ver', [VendedorController::class, 'index']);
 $router->get('/admin/vendedores/crear', [VendedorController::class, 'crear']);
