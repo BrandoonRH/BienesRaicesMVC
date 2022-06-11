@@ -75,7 +75,7 @@ function validarRedireccionarGET(String $url){
   $id = filter_var( $id, FILTER_VALIDATE_INT );
   
   if(!$id){
-      header("Location: /bienesraicesMVC/public/index.php".$url);
+      header("Location: /".$url);
   }
   return $id; 
 }
@@ -86,7 +86,7 @@ function validarRedireccionarPOST(String $url){
   $id = filter_var( $id, FILTER_VALIDATE_INT );
   
   if(!$id){
-      header("Location: /bienesraicesMVC/public/index.php".$url);
+      header("Location: /".$url);
   }
   return $id; 
 }

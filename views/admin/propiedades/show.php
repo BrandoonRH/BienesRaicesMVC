@@ -2,7 +2,7 @@
     <h1>Lista de Bienes Raices</h1>
    
     <div class="contenedor">
-     <a href="/bienesraicesMVC/public/index.php/admin" class="boton boton-verde">Volver..</a>
+     <a href="/admin" class="boton boton-verde">Volver..</a>
     </div>
      <h2>Propiedades</h2>
     <div class="contenedor">
@@ -40,13 +40,13 @@
                    <!--Acciones -->
                    <td>
 
-                       <form action="/bienesraicesMVC/public/index.php/admin/propiedades/eliminar" method="POST" class="w-100">
+                       <form action="/admin/propiedades/eliminar" method="POST" class="w-100">
                           <input type="hidden" name="id" value=" <?php echo $propiedad->id ?>">
                           <input type="hidden" name="tipo" value="propiedad">
                          <input type="submit" class="boton-rojo-block" value="Eliminar">
                        </form>
 
-                       <a href="/bienesraicesMVC/public/index.php/admin/propiedades/actualizar?id= <?php echo $propiedad->id ?>" class="boton-amarillo-block">Actualizar</a>    
+                       <a href="/admin/propiedades/actualizar?id= <?php echo $propiedad->id ?>" class="boton-amarillo-block">Actualizar</a>    
                    </td>
 
                </tr>

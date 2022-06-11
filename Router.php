@@ -42,7 +42,7 @@ class Router{
         }
         //Proteger las rutas 
         if(in_array($urlActual, $rutas_protegidas) && !$auth){
-            header('Location: /bienesraicesMVC/public/index.php');
+            header('Location: /');
         }
 
         if($fnc){

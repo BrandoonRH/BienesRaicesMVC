@@ -12,11 +12,11 @@
     }?>
 
     <div class="contenedor-enlaces-admin">
-        <a href="/bienesraicesMVC/public/index.php/admin/propiedades/crear" class="boton boton-verde">Crear Propiedad</a>
+        <a href="/admin/propiedades/crear" class="boton boton-verde">Crear Propiedad</a>
 
-        <a href="/bienesraicesMVC/public/index.php/admin/propiedades/ver" class="boton boton-verde">Ver Propiedades</a>
+        <a href="/admin/propiedades/ver" class="boton boton-verde">Ver Propiedades</a>
 
-        <a href="/bienesraicesMVC/public/index.php/admin/propiedades/actualizarVista" class="boton boton-verde">Actualizar Propiedad</a>
+        <a href="/admin/propiedades/actualizarVista" class="boton boton-verde">Actualizar Propiedad</a>
         
         <a href="#" class="boton boton-verde">Eliminar Propiedad</a>
     </div>
@@ -30,9 +30,9 @@
     <h1>Administrador de Vendedores</h1>
 
     <div class="contenedor-enlaces-admin">
-        <a href="/bienesraicesMVC/public/index.php/admin/vendedores/crear" class="boton boton-verde">Registrar Vendedor</a>
+        <a href="/admin/vendedores/crear" class="boton boton-verde">Registrar Vendedor</a>
 
-        <a href="/bienesraicesMVC/public/index.php/admin/vendedores/ver" class="boton boton-verde">Ver Vendedores</a>
+        <a href="/admin/vendedores/ver" class="boton boton-verde">Ver Vendedores</a>
 
         <a href="#" class="boton boton-verde">Actualizar Vendedor</a>
         

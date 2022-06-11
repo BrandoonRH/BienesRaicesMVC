@@ -22,7 +22,6 @@ class VendedorController{
             $vendedor = new Vendedor($_POST['vendedor']); 
             $errores = $vendedor->validar(); 
             if(empty($errores)){
-                
                 $vendedor->guardar();   
             }
         }

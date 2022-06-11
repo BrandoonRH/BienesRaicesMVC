@@ -2,7 +2,7 @@
     <h1>Actuallizar Vendedor</h1>
 
     <div class="contenedor" style="margin-bottom: 15px">
-     <a href="/bienesraicesMVC/public/index.php/admin   " class="boton boton-verde">Volver..</a>
+     <a href="/admin   " class="boton boton-verde">Volver..</a>
     </div>
 
     <?php foreach($errores as $error): ?>

@@ -13,20 +13,20 @@
 
         <ul class="iconos-caracteristicas">
             <li>
-                <img class="icono" loading="lazy" src="/bienesraicesMVC/public/build/img/icono_wc.svg" alt="icono wc">
+                <img class="icono" loading="lazy" src="/build/img/icono_wc.svg" alt="icono wc">
                 <p><?php echo $propiedad->wc; ?></p>
             </li>
             <li>
-                <img class="icono" loading="lazy" src="/bienesraicesMVC/public/build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+                <img class="icono" loading="lazy" src="/build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
                 <p><?php echo $propiedad->estacionamiento; ?></p>
             </li>
             <li>
-                <img class="icono" loading="lazy" src="/bienesraicesMVC/public/build/img/icono_dormitorio.svg" alt="icono habitaciones">
+                <img class="icono" loading="lazy" src="/build/img/icono_dormitorio.svg" alt="icono habitaciones">
                 <p><?php echo $propiedad->habitaciones; ?></p>
             </li>
         </ul>
 
-        <a data-cy="enlace-rpopiedad" href="/bienesraicesMVC/public/index.php/propiedad?id=<?php echo $propiedad->id; ?>" class="boton-amarillo-block">Ver Propiedad</a>
+        <a data-cy="enlace-rpopiedad" href="/propiedad?id=<?php echo $propiedad->id; ?>" class="boton-amarillo-block">Ver Propiedad</a>
     </div><!--.contenido-anuncio-->
 </div><!--anuncio-->
 <?php  }; ?>

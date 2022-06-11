@@ -1,15 +1,15 @@
 <main class="contenedor seccion">
 <div class="contenedor" style="margin-bottom: 15px">
-     <a href="/bienesraicesMVC/public/index.php" class="boton boton-verde">Volver..</a>
+     <a href="/" class="boton boton-verde">Volver..</a>
 </div>
         <h1>Conoce sobre Nosotros</h1>
 
         <div class="contenido-nosotros">
             <div class="imagen">
                 <picture>
-                    <source srcset="/bienesraicesMVC/public/build/img/nosotros.webp" type="image/webp">
-                    <source srcset="/bienesraicesMVC/public/build/img/nosotros.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/bienesraicesMVC/public/build/img/nosotros.jpg" alt="Sobre Nosotros">
+                    <source srcset="/build/img/nosotros.webp" type="image/webp">
+                    <source srcset="/build/img/nosotros.jpg" type="image/jpeg">
+                    <img loading="lazy" src="/build/img/nosotros.jpg" alt="Sobre Nosotros">
                 </picture>
             </div>
 

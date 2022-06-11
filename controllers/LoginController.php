@@ -40,7 +40,7 @@ class LoginController{
     public static function logout(){
         session_start(); 
         $_SESSION = []; 
-        header('Location: /bienesraicesMVC/public/index.php');
+        header('Location: /');
      }
 
 }

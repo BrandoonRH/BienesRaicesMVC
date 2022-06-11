@@ -4,7 +4,7 @@ namespace Model;
 
 class Propiedad extends ActiveRecord{
     protected static $tabla = 'propiedades'; 
-    protected static $columnasDB = ['titulo', 'precio', 'imagen', 'descripcion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedorId'];
+    protected static $columnasDB = ['id', 'titulo', 'precio', 'imagen', 'descripcion', 'habitaciones', 'wc', 'estacionamiento', 'creado', 'vendedorId'];
     public $id; 
     public $titulo; 
     public $precio; 

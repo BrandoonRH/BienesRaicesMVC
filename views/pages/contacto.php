@@ -9,7 +9,7 @@
         <?php }?>    
 
     <div class="contenedor" style="margin-bottom: 15px">
-     <a href="/bienesraicesMVC/public/index.php" class="boton boton-verde">Volver..</a>
+     <a href="/" class="boton boton-verde">Volver..</a>
     </div>
 
         <picture>
@@ -20,7 +20,7 @@
 
         <h2 data-cy="heading-formulario">Llene el Formulario de Contacto</h2>
 
-        <form data-cy="formulario-contacto" class="formulario" action="/bienesraicesMVC/public/index.php/contacto" method="POST">
+        <form data-cy="formulario-contacto" class="formulario" action="/contacto" method="POST">
             <fieldset>
                 <legend>Información Personal</legend>
 

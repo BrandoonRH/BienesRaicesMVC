@@ -101,7 +101,7 @@ protected static $errores = [];
      $resultado = self::$conexionDB->query($query);
       if($resultado){
          //Redireccionar al Usuario 
-      header('Location: /bienesraicesMVC/public/index.php/admin?resultado=1');
+      header('Location: /admin?resultado=1');
       }
  }
 
@@ -120,7 +120,7 @@ protected static $errores = [];
      
      $resultadoActualizacion = self::$conexionDB->query($query); 
      if($resultadoActualizacion){
-         header('Location: /bienesraicesMVC/public/index.php/admin?resultado=2');
+         header('Location: /admin?resultado=2');
      }
  }
  public function eliminar(){
@@ -129,7 +129,7 @@ protected static $errores = [];
      $resultadoEliminar = self::$conexionDB->query($queryEliminar); 
      if($resultadoEliminar){
          $this->borrarImagen(); 
-         header('Location: /bienesraicesMVC/public/index.php/admin?resultado=3');
+         header('Location: /admin?resultado=3');
      }
 
  }

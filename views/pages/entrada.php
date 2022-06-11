@@ -1,12 +1,12 @@
 <main class="contenedor seccion contenido-centrado">
 <div class="contenedor" style="margin-bottom: 15px">
-     <a href="/bienesraicesMVC/public/index.php" class="boton boton-verde">Volver..</a>
+     <a href="/" class="boton boton-verde">Volver..</a>
 </div>
         <h1>Guía para la decoración de tu hogar</h1>
         <picture>
-            <source srcset="/bienesraicesMVC/public/build/img/destacada2.webp" type="image/webp">
-            <source srcset="/bienesraicesMVC/public/build/img/destacada2.jpg" type="image/jpeg">
-            <img loading="lazy" src="/bienesraicesMVC/public/build/img/destacada2.jpg" alt="imagen de la propiedad">
+            <source srcset="/build/img/destacada2.webp" type="image/webp">
+            <source srcset="/build/img/destacada2.jpg" type="image/jpeg">
+            <img loading="lazy" src="/build/img/destacada2.jpg" alt="imagen de la propiedad">
         </picture>
 
         <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Brandon Ramírez</span> </p>

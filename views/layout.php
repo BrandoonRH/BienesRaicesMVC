@@ -18,33 +18,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienes Raices </title>
-    <link rel="stylesheet" href="/bienesraicesMVC/public/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
     
     <header class="header <?php echo $inicio ? 'inicio' : '' ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/bienesraicesMVC/public/index.php/">
-                    <img src="/bienesraicesMVC/public/build/img/logo.svg" alt="Logotipo de Bienes Raices">
+                <a href="/">
+                    <img src="/build/img/logo.svg" alt="Logotipo de Bienes Raices">
                 </a>
 
                 <div class="mobile-menu">
-                    <img src="/bienesraicesMVC/public/build/img/barras.svg" alt="icono menu responsive">
+                    <img src="/build/img/barras.svg" alt="icono menu responsive">
                 </div>
 
                 <div class="derecha">
-                    <img class="dark-mode-boton" src="/bienesraicesMVC/public/build/img/dark-mode.svg">
+                    <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav data-cy="navegacion-header" class="navegacion">
-                        <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
-                        <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
-                        <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
-                        <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
+                        <a href="/nosotros">Nosotros</a>
+                        <a href="/propiedades">Propiedades</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/contacto">Contacto</a>
                         <?php if($auth): ?>
-                            <a href="/bienesraicesMVC/public/index.php/admin">Panel Admin</a>
-                            <a href="/bienesraicesMVC/public/index.php/logout">Cerrar Sesión</a>
+                            <a href="/admin">Panel Admin</a>
+                            <a href="/logout">Cerrar Sesión</a>
                           <?php else:  ?>
-                            <a href="/bienesraicesMVC/public/index.php/login">Iniciar Sesión</a>
+                            <a href="/login">Iniciar Sesión</a>
                         <?php endif; ?>
                     </nav>
                 </div>
@@ -61,10 +61,10 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav data-cy="navegacion-footer" class="navegacion">
-                <a href="/bienesraicesMVC/public/index.php/nosotros">Nosotros</a>
-                <a href="/bienesraicesMVC/public/index.php/propiedades">Propiedades</a>
-                <a href="/bienesraicesMVC/public/index.php/blog">Blog</a>
-                <a href="/bienesraicesMVC/public/index.php/contacto">Contacto</a>
+                <a href="/nosotros">Nosotros</a>
+                <a href="/propiedades">Propiedades</a>
+                <a href="/blog">Blog</a>
+                <a href="/contacto">Contacto</a>
             </nav>
         </div>
         
@@ -72,6 +72,6 @@
         <p data-cy="copyright" class="copyright">Todos los derechos Reservados <?php echo date('Y')?> &copy;</p>
     </footer>
 
-    <script src="/bienesraicesMVC/public/build/js/bundle.min.js"></script>
+    <script src="/build/js/bundle.min.js"></script>
 </body>
 </html>

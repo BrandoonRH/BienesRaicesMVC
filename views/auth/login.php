@@ -6,7 +6,7 @@
         <?php endforeach; ?>
 
 
-        <form data-cy="formulario-login" class="formulario formulario-login" method="POST" action="/bienesraicesMVC/public/index.php/login" >
+        <form data-cy="formulario-login" class="formulario formulario-login" method="POST" action="/login" >
 
             <fieldset class="fieldset-login">
                 <legend>Email y Contrseña</legend>

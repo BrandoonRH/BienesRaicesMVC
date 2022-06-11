@@ -54,13 +54,7 @@ class Admin extends ActiveRecord{
       session_start(); 
       $_SESSION['usuario'] = $this->email; 
       $_SESSION['login'] = true; 
-    
-      header('Location: /bienesraicesMVC/public/index.php/admin');
+
+      header('Location: /admin');
     }
-
-
-
-
-
-
-}
+  }

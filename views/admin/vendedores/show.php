@@ -3,7 +3,7 @@
     <h1>Lista de Vendedores</h1>
 
     <div class="contenedor">
-   <a href="/bienesraicesMVC/public/index.php/admin" class="boton boton-verde">Volver..</a>
+   <a href="/admin" class="boton boton-verde">Volver..</a>
    </div>
 
    <h2>Vendedores</h2>
@@ -47,13 +47,13 @@
                    <!--Acciones -->
                    <td>
 
-                       <form action="/bienesraicesMVC/public/index.php/admin/vendedores/eliminar" method="POST" class="w-100">
+                       <form action="/admin/vendedores/eliminar" method="POST" class="w-100">
                           <input type="hidden" name="id" value=" <?php echo $vendedor->id ?>">
                           <input type="hidden" name="tipo" value="vendedor">
                          <input type="submit" class="boton-rojo-block" value="Eliminar">
                        </form>
 
-                       <a href="/bienesraicesMVC/public/index.php/admin/vendedores/actualizar?id= <?php echo $vendedor->id ?>" class="boton-amarillo-block">Actualizar</a>    
+                       <a href="/admin/vendedores/actualizar?id= <?php echo $vendedor->id ?>" class="boton-amarillo-block">Actualizar</a>    
                    </td>
 
                </tr>
