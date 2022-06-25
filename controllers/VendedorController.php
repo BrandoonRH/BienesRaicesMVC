@@ -2,6 +2,7 @@
 namespace Controllers;
 use MVC\Router; 
 use Model\Vendedor;
+use Intervention\Image\ImageManagerStatic as Image;
 
 class VendedorController{
 
@@ -18,10 +19,22 @@ class VendedorController{
         $errores = Vendedor::getErrores();
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    
+
             $vendedor = new Vendedor($_POST['vendedor']); 
+            $nameImage = md5( uniqid( rand(), true ) ) . ".jpg";
+
+            if($_FILES['vendedor']['tmp_name']['imagen']){
+                $image = Image::make($_FILES['vendedor']['tmp_name']['imagen'])->fit(800,600); 
+                $vendedor->setImagen($nameImage);
+            }
+
             $errores = $vendedor->validar(); 
+
             if(empty($errores)){
+                if(!is_dir(CARPETA_IMAGENES)){
+                    mkdir(CARPETA_IMAGENES); 
+                }
+                $image->save(CARPETA_IMAGENES . $nameImage);
                 $vendedor->guardar();   
             }
         }
@@ -35,17 +48,22 @@ class VendedorController{
      public static function actualizar(Router $router){
         $errores = Vendedor::getErrores();
         $id = validarRedireccionarGET("/admin");    
-      $vendedor = Vendedor::find($id);
+        $vendedor = Vendedor::find($id);
 
             if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
                 $args = $_POST['vendedor']; 
                 $vendedor->sincronizar($args); 
                 $errores = $vendedor->validar(); 
-            
+                $nameImage = md5( uniqid( rand(), true ) ) . ".jpg";
+                if($_FILES['vendedor']['tmp_name']['imagen']){
+                    $image = Image::make($_FILES['vendedor']['tmp_name']['imagen'])->fit(800,600); 
+                    $vendedor->setImagenVendedor($nameImage);
+                }
                 
                 if(empty($errores)){
-                
+                    if($_FILES['vendedor']['tmp_name']['imagen']){
+                        $image->save(CARPETA_IMAGENES . $nameImage);
+                    }
                 $vendedor->guardar(); 
                 }
             }

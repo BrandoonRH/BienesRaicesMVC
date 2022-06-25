@@ -111,6 +111,7 @@ class PropiedadController {
            }  
          }
     }
+    
 
     public static function actualizarView(Router $router){
         $router->render('admin/propiedades/updateView');

@@ -1,6 +1,6 @@
 /vendor
 /node_modules
 /public/images
+/public/build
 /public/build/img 
-/public/imagenesBienesRaices
 /cypress/videos

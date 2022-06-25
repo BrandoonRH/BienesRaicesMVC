@@ -2,7 +2,8 @@
 
 define('TEMPLATES_URL', __DIR__ . '/templates');
 define('FUNCIONES_URL', __DIR__ . 'functions.php');
-define ('CARPETA_IMAGENES', $_SERVER['DOCUMENT_ROOT'] . '/imagenesBienesRaices/');
+define ('CARPETA_IMAGENES', $_SERVER['DOCUMENT_ROOT'] . '/images/');
+
 
 function incluirTemplate( string $nombre, bool $inicio = false){
  //echo TEMPLATES_URL . "/${nombre}.php";

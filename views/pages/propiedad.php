@@ -5,7 +5,7 @@
 </div>
         <h1 data-cy="titulo-propiedad"><?php echo $propiedad->titulo ?></h1>
 
-        <img loading="lazy" src="/public/imagenesBienesRaices/<?php echo $propiedad->imagen; ?>" alt="imagen de la propiedad">
+        <img loading="lazy" src="/images/<?php echo $propiedad->imagen; ?>" alt="imagen de la propiedad">
      
 
         <div class="resumen-propiedad">

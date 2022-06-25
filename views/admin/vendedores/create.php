@@ -14,6 +14,6 @@
     <form action="/admin/vendedores/crear" class="formulario" method="POST" enctype="multipart/form-data" >
         <?php include __DIR__ . '/formulario.php';  ?>
 
-        <input type="submit" value="Registrar Propiedad" class="boton boton-verde">
+        <input type="submit" value="Registrar Vendedor" class="boton boton-verde">
     </form>
 </main>

@@ -16,6 +16,7 @@
                 <th>Apellidos</th>
                 <th>telefono</th>
                 <th>Correo</th>
+                <th>Foto</th>
            </thead>
            <tbody><!---Mostramos los Datos-->
            <?php foreach( $vendedores as $vendedor ) : ?>
@@ -43,6 +44,11 @@
                    <td>
                     <?php echo $vendedor->correo ?>
                    </td> 
+                    <!--Imagen-->
+                    <td>
+                    <img src="/images/<?php echo $vendedor->imagen; ?>" alt="" class="imagen-tabla">
+                   </td> 
+
 
                    <!--Acciones -->
                    <td>

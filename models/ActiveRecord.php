@@ -42,7 +42,7 @@ protected static $errores = [];
  }
 
 
- //Subir Imagen 
+ //Subir Imagen Propiedad
  public function setImagen($imagen){
      //Elimina la Imagen Previa 
      if(!is_null($this->id)){
@@ -52,15 +52,14 @@ protected static $errores = [];
       $this->imagen = $imagen; 
     }
  }
-
  public function borrarImagen(){
-     //Comprobar si existe el Archivo   
-     $archivoExiste = file_exists(CARPETA_IMAGENES . $this->imagen); 
-     if($archivoExiste){
-      unlink(CARPETA_IMAGENES . $this->imagen);    
-     }
- }
-
+    //Comprobar si existe el Archivo   
+    $archivoExiste = file_exists(CARPETA_IMAGENES . $this->imagen); 
+    if($archivoExiste){
+     unlink(CARPETA_IMAGENES . $this->imagen);    
+    }
+}
+  
  public static function getErrores(){
     return static::$errores; 
  }
@@ -131,7 +130,6 @@ protected static $errores = [];
          $this->borrarImagen(); 
          header('Location: /admin?resultado=3');
      }
-
  }
 
  //Listar Todas los Registros de la Base de Datoos

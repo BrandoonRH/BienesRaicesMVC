@@ -14,7 +14,7 @@
         <?php if($propiedad->imagen){ ?>
          
          <div style="width: 20rem;">
-         <img src="/imagenesBienesRaices/<?php echo $propiedad->imagen ?>" alt="" class="imagen-tabla">
+         <img src="/images/<?php echo $propiedad->imagen ?>" alt="" class="imagen-tabla">
          </div>
          
         <?php } ?>    

@@ -15,4 +15,13 @@
         <label for="correo">E-mail: </label>
         <input type="email" name="vendedor[correo]" id="correo" placeholder="Correo del Vendedor(a)" value="<?php echo s($vendedor->correo);  ?>">
 
+        <label for="imagen">Imagen:</label>
+        <input type="file" name="vendedor[imagen]" id="imagen" accept="image/jpeg, image/png">
+        <?php if($vendedor->imagen){ ?>
+         
+         <div style="width: 20rem;">
+         <img src="/images/<?php echo $vendedor->imagen ?>" alt="" class="imagen-tabla">
+         </div>
+         
+        <?php } ?>    
 </fieldset>

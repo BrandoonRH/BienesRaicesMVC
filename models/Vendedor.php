@@ -4,13 +4,14 @@ namespace Model;
 
 class Vendedor extends ActiveRecord{
     protected static $tabla = 'vendedores'; 
-    protected static $columnasDB = ['id', 'nombre', 'apellido', 'telefono', 'correo'];
+    protected static $columnasDB = ['id', 'nombre', 'apellido', 'telefono', 'correo', 'imagen'];
 
     public $id; 
     public $nombre; 
     public $apellido; 
     public $telefono; 
     public $correo; 
+    public $imagen; 
 
     public function __construct($args = [])
     {
@@ -19,6 +20,7 @@ class Vendedor extends ActiveRecord{
         $this->apellido = $args['apellido'] ?? '';
         $this->telefono = $args['telefono'] ?? '';
         $this->correo = $args['correo'] ?? '';
+        $this->imagen = $args['imagen'] ?? '';
        
     }
 
@@ -42,6 +44,9 @@ class Vendedor extends ActiveRecord{
        if(!preg_match('/^[A-z0-9\\._-]+@[A-z0-9][A-z0-9-]*(\\.[A-z0-9_-]+)*\\.([A-z]{2,6})$/', $this->correo)){
         self::$errores [] = " Correo NO valido"; 
        }
+       if(!$this->imagen){
+        self::$errores [] = "Añadir Imagen del Vendedor"; 
+    }
        
        return self::$errores; 
    

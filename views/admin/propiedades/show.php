@@ -29,7 +29,7 @@
 
                    <!--Imagen -->
                    <td>
-                     <img src="/imagenesBienesRaices/<?php echo $propiedad->imagen; ?>" alt="" class="imagen-tabla">
+                     <img src="/images/<?php echo $propiedad->imagen; ?>" alt="" class="imagen-tabla">
                    </td>
 
                    <!--Precio -->
